@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<style>
+    /********** Base styles **********/
+    * {
+        box-sizing: border-box;
+        font-family: Helvetica;
+    }
+    h1 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    p {
+        width: 90%;
+        height: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+
+    /* Simple Responsive Framework. */
+    .row {
+        width: 100%;
+    }
+
+    .box{
+        background-color: #cccdcf;
+        color: black;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        border: 5px solid black;
+        padding: 0;
+    }
+
+    .title1{
+        float: right;
+        width: 30%;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(241, 142, 142);
+        margin: 0;
+        padding: 8px;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+    }
+
+    .title2{
+        float: right;
+        width: 30%;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(204, 58, 58);
+        margin: 0;
+        padding: 8px;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        color: white;
+    }
+
+    .title3{
+        float: right;
+        width: 30%;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(241, 218, 142);
+        margin: 0;
+        padding: 8px;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+    }
+    
+
+    @media (min-width: 992px){
+        .col-lg-4 {
+            display: inline-block;
+            width: 33.33%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        .col-md-6{
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 767px){
+        .col-sm-12{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    
+    
+</style>
+
+<body>
+    <h1>Our Menu</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <p class="title1">Chicken</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad, nostrum blanditiis delectus odio totam culpa soluta dolorum, assumenda impedit cupiditate, accusantium eum aliquid obcaecati dolore rerum veritatis fugit aspernatur?</p>
+            </div>
+        </div><div class="col-lg-4 col-md-6">
+            <div class="box">
+                <p class="title2">Beef</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad, nostrum blanditiis delectus odio totam culpa soluta dolorum, assumenda impedit cupiditate, accusantium eum aliquid obcaecati dolore rerum veritatis fugit aspernatur?</p>
+            </div>
+        </div><div class="col-lg-4 col-sm-12">
+            <div class="box">
+                <p class="title3">Sushi</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad, nostrum blanditiis delectus odio totam culpa soluta dolorum, assumenda impedit cupiditate, accusantium eum aliquid obcaecati dolore rerum veritatis fugit aspernatur?</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
